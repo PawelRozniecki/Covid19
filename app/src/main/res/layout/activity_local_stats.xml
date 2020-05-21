@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F5FF"
+    tools:context=".LocalStats">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#ffffff"
+        android:elevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Poland Statistics"
+            android:textColor="#5C75CB"
+            android:textSize="30dp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="15dp"
+            tools:layout_editor_absoluteX="275dp"
+            tools:layout_editor_absoluteY="228dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5C75CB"
+                android:fontFamily="@font/balsamic"
+                android:paddingTop="10dp"
+                android:layout_gravity="center|top"
+                android:text="Confirmed"/>
+
+            <TextView
+                android:id="@+id/confirmedNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5C75CB"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/balsamic"
+                android:text="18,457"/>
+            <TextView
+                android:id="@+id/confirmedDifference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:textColor="#F9A7A7"
+                android:textSize="15dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/balsamic"
+                android:text="+243"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="15dp"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="228dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5C75CB"
+                android:fontFamily="@font/balsamic"
+                android:paddingTop="10dp"
+                android:layout_gravity="center|top"
+                android:text="Recovered"/>
+            <TextView
+                android:id="@+id/recoveredNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5C75CB"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/balsamic"
+                android:text="7,157"/>
+            <TextView
+                android:id="@+id/recoveredDifference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:textColor="#F9A7A7"
+                android:textSize="15dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/balsamic"
+                android:text="+0"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="15dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="228dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5C75CB"
+                android:fontFamily="@font/balsamic"
+                android:paddingTop="10dp"
+                android:layout_gravity="center|top"
+                android:text="Deaths"/>
+            <TextView
+                android:id="@+id/deathsNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5C75CB"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/balsamic"
+                android:text="915"/>
+            <TextView
+                android:id="@+id/deathsDifference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:textColor="#F9A7A7"
+                android:textSize="15dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/balsamic"
+                android:text="+8"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

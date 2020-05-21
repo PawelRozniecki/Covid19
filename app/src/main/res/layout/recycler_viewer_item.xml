@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp" android:paddingRight="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_holder"
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_height="200dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            >
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+
+
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"
+                android:text="Title"
+                android:fontFamily="@font/balsamicbold"
+                android:textColor="#5C75CB"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="39dp"
+                android:text="Description"
+                android:textColor="#5C75CB"
+
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/readmore"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/learnmore_btn"
+                android:fontFamily="@font/belgrano"
+
+                android:text="read more"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

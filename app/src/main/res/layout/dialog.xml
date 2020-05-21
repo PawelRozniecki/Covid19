@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/belgrano"
+
+        android:text="If you are sick with COVID-19 or you suspect you might have COVID-19 ,follow the steps below to help protect other people in your home and community"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:text="•STAY HOME: Most people with COVID-19
+have mild illness and are able to recover at
+home without medical care. Do not leave
+your home, except to get medical care. Do
+not visit public areas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="• TAKE CARE OF YOURSELF: Get rest and stay hydrated."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="• GET MEDICAL CARE WHEN NEEDED: Call your doctor before
+you go to their office for care. But, if you have trouble
+breathing or other concerning symptoms, call 911 for
+immediate help."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="• AVOID PUBLIC TRANSPORT"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="• MONITOR YOUR SYMPTOMS: Your local health authorities
+will give instructions on checking your symptoms
+and reporting information."/>
+
+
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#F9A7A7"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/balsamic"
+                android:textSize="19dp"
+                android:layout_gravity="center"
+                android:text="IF YOU DEVELOP EMERGENCY WARNING SIGNS FOR COVID-19 GET MEDICAL ATTENTION IMMIEDIETELY!CALL 911 AND IF POSSIBLE PUT ON A MASK BEFORE MEDICAL EMERGENCY ARRIVES"
+/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="dismiss" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
